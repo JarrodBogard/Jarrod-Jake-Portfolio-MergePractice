@@ -1,0 +1,14 @@
+.transforms{
+   
+   transform: scale(.75);
+   transition: all 1s ease;
+  animation: backwards;
+  font-size: small;
+  
+}
+.transforms:hover {
+    transform: scale(1);
+    transition: 1.5s;
+    font-size: larger;
+    
+}
