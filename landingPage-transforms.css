@@ -1,14 +1,25 @@
-.transforms{
-   
-   transform: scale(.75);
-   transition: all 1s ease;
-  animation: backwards;
-  font-size: small;
-  
-}
-.transforms:hover {
+
+.transforms a {
     transform: scale(1);
-    transition: 1.5s;
-    font-size: larger;
-    
+    background-color: aliceblue;
+    font-size: 14px;
+    transition: all .5s ease;
+    z-index: 1;
 }
+
+.transforms:hover a {
+    transform: scale(1.5, 2);
+    font-size: 28px;
+    animation: animate-text 3s ease-in-out;
+    z-index: 2;
+
+}
+
+@keyframes animate-text {
+    0% {background-color: aqua;}
+    50% {background-color: rgb(24, 37, 37);}
+    100% {background-color: rgb(31, 43, 43);}
+
+}
+
+
